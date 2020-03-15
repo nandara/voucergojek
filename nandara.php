@@ -2,10 +2,10 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
-echo color("red","[•]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("red","[•]              waiting proses.....           \n");
-echo color("red","[•] cara menulis nomor pakai 62xxxxxxxxxx \n");
-echo color("red","# # # # # # # # # # # # Nandara ID # # # # # # # # # # # \n");
+echo color("yellow","[•]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("yellow","[•]              waiting proses.....           \n");
+echo color("yellow","[•] cara menulis nomor pakai 62xxxxxxxxxx \n");
+echo color("red","# # # # # # # # # # # Nandara ID # # # # # # # # # # # # \n");
 function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
