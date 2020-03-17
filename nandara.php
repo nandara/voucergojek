@@ -78,21 +78,21 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("yellow","📶▶️ Kode verifikasi sudah di kirim")."\n";
+        echo color("blue","📶▶️ Kode verifikasi sudah di kirim")."\n";
         otp:
         echo color("red","💬▶️ Otp : ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
         if(strpos($verif, '"access_token"')){
-        echo color("yellow","✔️▶️ Berhasil mendaftar\n");
+        echo color("blue","✔️▶️ Berhasil mendaftar\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO REDEEM VOUCHER🎫▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","🔐▶️ Claim voc GORIDE 8K");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("blue","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(5);
@@ -106,7 +106,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	gocar:
         echo "\n".color("white","🔐▶️ Claim voc GOFOOD 15K 5K 10K");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("blue","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -120,7 +120,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("green","🔐▶️ Message: ".$message);
         gofood:
         echo "\n".color("white","🔐▶️ Claim voc CASHBACK ALFAMART");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("blue","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
@@ -129,7 +129,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$message);
         echo "\n".color("white","🔐▶️ Claim voc CASHBACK ALFAMART");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("blue","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(1);
@@ -208,7 +208,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("yellow","🔧▶️ SET PIN SEKLAIAN BIAR AMAN !!!: y/n ");
+         echo "\n".color("blue","🔧▶️ SET PIN SEKLAIAN BIAR AMAN !!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
@@ -229,13 +229,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          }else{
          echo color("red","-] Otp yang anda input salah");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("yellow","!] Silahkan input kembali\n");
+         echo color("blue","!] Silahkan input kembali\n");
          goto otp;
          }
          }else{
          echo color("red","-] Nomor sudah teregistrasi");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("yellow","!] Silahkan registrasi kembali\n");
+         echo color("blue","!] Silahkan registrasi kembali\n");
          goto ulang;
          }
 //  }
