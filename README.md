@@ -1,4 +1,5 @@
 # claim voucer gojek #
+
 username : nandara
 
 Pkg update
@@ -16,6 +17,12 @@ Git clone https://github.com/nandara/voucergojek
 Cd voucergojek
 
 php nandara.php
+
+
+
+Thx to : Aldi 
+
+
 
 
 
