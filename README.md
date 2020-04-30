@@ -20,7 +20,7 @@ php nandara.php
 
 
 
-Thx to : Aldi 
+Thx to : Aldi gojekgultik
 
 
 
