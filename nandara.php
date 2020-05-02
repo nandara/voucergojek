@@ -18,7 +18,7 @@ echo "\e[93m            \e[96m  VOUCHER YANG TERSEDIA \e[93m \n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m  =\e[95m 🤸  1. VOUCHER BELANJA ✓           🤪 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 15+10+5K MINBEL 30K  ✓ 🤪 \e[96m=\n";
-echo "\e[96m  =\e[95m 🤸  3. VOUCHER GOFOOD 20+10K MINBEL 30K  ✓ 🤪 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  3. VOUCHER GOFOOD Voc Dasar ✓ 🤪 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  4. VOUCHER GORIDE GoSend ✓     🤪 \e[96m=\n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -121,7 +121,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOODLAGI270420E1"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKAN"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
