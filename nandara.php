@@ -16,10 +16,10 @@ echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[93m            \e[96m  VOUCHER YANG TERSEDIA \e[93m \n";
 echo "\e[96m  ==============================================\n";
-echo "\e[96m  =\e[95m 🤸  1. VOUCHER BELANJA ✓           🤪 \e[96m=\n";
-echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 15+10+5K MINBEL 30K  ✓ 🤪 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  1. VOUCHER Eatlah ✓           🤪 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  2. VOUCHER GOFOOD 15+10+5K GOFOOD PARTNER  ✓ 🤪 \e[96m=\n";
 echo "\e[96m  =\e[95m 🤸  3. VOUCHER GOFOOD Voc Dasar ✓ 🤪 \e[96m=\n";
-echo "\e[96m  =\e[95m 🤸  4. VOUCHER GORIDE GoSend ✓     🤪 \e[96m=\n";
+echo "\e[96m  =\e[95m 🤸  4. VOUCHER ??? ✓     🤪 \e[96m=\n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[95m Sudah Punya User Id (Y/N ?: ";	
@@ -101,13 +101,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("nevy","+] Akses token Lo Nih Boy : ".$token."\n\n");
         save("token.txt",$token);
         echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠Auto Calim Voucher Gojek🛠▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("nevy","🔒▶️ Claim Voc Belanja");
+        echo "\n".color("nevy","🔒▶️ Claim Voc EATLAH");
         echo "\n".color("yellow","⏳▶️ Sabar Boy");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHBELANJA"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
@@ -115,13 +115,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	      gocar:
-        echo "\n".color("nevy","🔒▶️ Claim Voc Gofood Isi 20+10k");
+        echo "\n".color("nevy","🔒▶️ Claim Voc Gofood Isi 15+10+5k");
         echo "\n".color("yellow","⏳▶️ Sabar Boy");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKAN"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
@@ -129,23 +129,23 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
         gofood:
-        echo "\n".color("nevy","🔒▶️ Claim Voc Gofood Isi 15+10+5k");
+        echo "\n".color("nevy","🔒▶️ Claim Voc Gofood Isi Orins");
         echo "\n".color("yellow","⏳▶️ Sabar Boy");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKAN"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANB"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$message);
-        echo "\n".color("nevy","🔒▶️ Claim Voc Gosend");
+        echo "\n".color("nevy","🔒▶️ Refresh Voc GOFOOD 15+10+5k");
         echo "\n".color("yellow","⏳▶️ Sabar Boy");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHNGIRIM"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$messageboba09);
         sleep(3);
