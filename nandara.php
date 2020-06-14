@@ -5,7 +5,7 @@ ulang:
 // function change(){
 echo color("red","             SCRIPT GRATIS TIDAK DI JUAL \n");
 echo color("white","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("white","                    Never Extinct         \n");
+echo color("white","                    Nandara Official         \n");
 echo color("white","                  Format Kode 62*** \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
