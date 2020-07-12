@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function1.php";
 echo color("nevy"," ===================================\n");
 echo color("yellow"," Klaim Voucher 20+10\n");
-echo color("green"," GEMSEN SCRIPT GOFOOD\n");
+echo color("green"," NANDARA SCRIPT GOFOOD\n");
 echo color("blue"," Time    : ".date('[d-m-Y] [H:i:s]')."	\n");
 echo color("nevy"," ===================================\n");
 
