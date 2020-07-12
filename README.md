@@ -16,11 +16,13 @@ Git clone https://github.com/nandara/voucergojek
 
 Cd voucergojek
 
+ls
+
 php nandara.php
 
 
 
-Thx to : Aldi gojekgultik
+Thx to : Creator 
 
 
 
