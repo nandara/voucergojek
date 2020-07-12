@@ -2,11 +2,7 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\e[32;1m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo "\e[31;1m                 WELLCOME TO MY SCRIPT \n";
-echo "\e[31;1m          SCRIPT INI MILIK ABANG SAHRIL TAMPAN               \n";
-echo "\e[31;1m            subscribe YouTube raygar official dan              \n";
-echo "\e[31;1m                 YouTube Dzainvina channel                    \n";
-echo "\e[31;1m                    * SAHRIL_TAMPAN *            \n";
+echo "\e[31;1m                 WELLCOME TO MY SCRIPT \           \n";
 echo "\e[96m      %^~^~^~^~^\e[37;1m".date('[d-m-Y] [H:i:s]')."\e[96m^~^~^~^~^%\n";
 echo "\e[32;1m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[32;1m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
