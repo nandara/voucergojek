@@ -6,7 +6,8 @@ echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
 echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
 echo "\e[96m           JADI GUNAKANLAH DENGAN BIJAK                 \n";
 echo "\e[96m          SCRIB INI TIDAK DI JUAL BELIKAN               \n";
-echo "\e[96m              SUBCRIBE CHANNEL YOUTUTBE :               \n";
+echo "\e[96m              SUBCRIBE CHANNEL YOUTUTBE :  
+             \n";
 echo "\e[96m                    NANDARA OFFICIAL  
                      \n";
 echo "\e[96m       BIAR BISA MAKIN SEMANGAT BIKIN KONTENNYA         \n";
