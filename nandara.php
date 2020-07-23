@@ -7,7 +7,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("yellow","[•] Time : ".date('[d-m-Y] [H:i:s]')." \n");
 echo color("purple","[•] WAITING PROSESSS ..... \n");
-echo color("yellow","[•] Nandara \n");
+echo color("yellow","[•] NANDARA OFFICIAL \n");
 echo color("green","[•] CARA MENULIS NOMOR PAKAI 62xxxxxxxxxx \n");
 echo color("red","[•] KALAU GK BISA PAKE AJA 08xxxxxxxx \n");
 echo color("nevy","[•] SCRIPT GRATIS AWAS AJA LU JUAL \n");
