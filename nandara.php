@@ -164,8 +164,8 @@ include "function1.php";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Pin Maneh = 121212 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"121212"}';
+         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ Pin Maneh = 280582 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"280582"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp Pin: ";
          $otpsetpin = trim(fgets(STDIN));
