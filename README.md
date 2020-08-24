@@ -1,6 +1,5 @@
 # claim voucer gojek #
 
-username : nandara
 
 Pkg update
 
@@ -22,7 +21,7 @@ php nandara.php
 
 
 
-Thx to : Creator 
+# Thx to : Creator #
 
 
 
