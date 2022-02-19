@@ -8,12 +8,12 @@ function generateRandomString($length = 10) {
     }
     return $randomString;
 }
-$kodepromo = "KEJUTANGOMART";
+$kodepromo = "gojekinaja";
 $Phonemodel = generateRandomString(5);
 $XUniqueid = generateRandomString(16);
 echo '#################################';
 echo "\r\n";
-echo '# Copyright : @ilyasa48 | SGB-Team #';
+echo '# Copyright : @idnandara | NDR-Team #';
 echo "\r\n";
 echo '#################################';
 echo "\r\n";
